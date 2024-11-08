@@ -1,0 +1,51 @@
+/* Estilos básicos */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-color: #9ad6ff;
+    color: #000000;
+}
+
+header {
+    background-color: rgba(1, 99, 38, 0.7);
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.section {
+    padding: 60px 20px;
+    background: rgba(247, 217, 86, 0.8);
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ffb5b5;
+    border-radius: 5px;
+}

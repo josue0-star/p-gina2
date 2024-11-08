@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Clouds of the Sky</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservation">Reservations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a href="index.html">Spanish</a>
+    <!-- Page Sections -->
+    <section id="home" class="section">
+        <h1>Welcome to Hotel Clouds of the Sky</h1>
+        <p>Enjoy a unique experience in our beautiful beachfront facilities.</p>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>At Hotel Clouds of the Sky, we provide the best atmosphere for new and returning guests, satisfying their needs and helping them relax in a great environment.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Services</h2>
+        <ul>
+            <li>Rooms with ocean view and open ambiance</li>
+            <img src="img/hotel-aya-habitaciones-vista-mar.jpg" width="300" height="200">
+            <li>Spa</li>
+            <img src="img/OIP.jpeg" width="300" height="200">
+            <li>High-standard restaurants</li>
+            <img src="img/R.jpeg" width="300" height="200">
+        </ul>
+    </section>
+
+    <section id="location" class="section">
+        <h2>Location</h2>
+        <p>We are located on Costa del Sol, a place as beautiful and perfect as our guests.</p>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16626.921177170054!2d-89.01604605401836!3d13.33865798524978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7cba1049086983%3A0xda43ef28ca8faef3!2sPlaya%20Costa%20del%20Sol!5e1!3m2!1sen!2ssv!4v1731080457897!5m2!1sen!2ssv" 
+        width="400" 
+        height="450" 
+        style="border:10;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: cloudsofthesky@gmail.com</p>
+        <p>Phone: 6450 3422</p>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservation" class="section">
+        <h2>Reservations</h2>
+        <form action="reservation/reservation.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="reservation_date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="reservation_time" required>
+
+            <button type="submit">Reserve</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Hotel Clouds of the Sky. All rights reserved.</p>
+    </footer>
+</body>
+</html>

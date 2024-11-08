@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Las Nubes del Cielo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#location">Ubicación</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#reservation">Reservaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a href="index-en.html">Ingles</a>
+    <!-- Secciones de la Página -->
+    <section id="home" class="section">
+        <h1>Bienvenidos al Hotel Las Nubes del Cielo</h1>
+        <p>Disfruta de una experiencia única en nuestras instalaciones hermosas frente al mar.</p>
+    </section>
+
+    <section id="about" class="section">
+        <h2>Sobre Nosotros</h2>
+        <p>En Hotel Las Nubes del Cielo, damos el mejor ambiente a los nuevos y viejos huespedes,para satisfacer sus necesidades y mantenerlos en calma con buen ambiente.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Habitaciones con vista al mar y ambiente libre</li>
+            <img src="img/hotel-aya-habitaciones-vista-mar.jpg" width="300" height="200">
+            <li>Spa</li>
+            <img src="img/OIP.jpeg" width="300" height="200">
+            <li>Restaurantes con estandares altos</li>
+            <img src="img/R.jpeg" width="300" height="200">
+        </ul>
+    </section>
+
+    <section id="location" class="section">
+        <h2>Ubicación</h2>
+        <p>Nos encontramos en la Costa del Sol, un lugar tan hermoso y perfecto como nuestros huespedes.</p>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16626.921177170054!2d-89.01604605401836!3d13.33865798524978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7cba1049086983%3A0xda43ef28ca8faef3!2sPlaya%20Costa%20del%20Sol!5e1!3m2!1sen!2ssv!4v1731080457897!5m2!1sen!2ssv" 
+        width="400" 
+        height="450" 
+        style="border:10;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contacto</h2>
+        <p>Email: nubesdelcielo@gmail.com</p>
+        <p>Teléfono: 6450 3422</p>
+    </section>
+
+    <!-- Sección de Reservaciones -->
+    <section id="reservation" class="section">
+        <h2>Reservaciones</h2>
+        <form action="reservation/reservation.php" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="reservation_date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="reservation_time" required>
+
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 Hotel Nubes del Cielo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
